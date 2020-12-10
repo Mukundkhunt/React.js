@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-// import 'jqeury'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle'
 import { Redirect, Route, Switch } from 'react-router-dom'
 import About from './About'
 import Contact from './Contact'
@@ -19,7 +19,7 @@ export default class App extends Component {
           <Route exact path="/about" component={About} />
           <Route exact path="/service" component={Service} />
           <Route exact path="/contact" component={Contact} />
-          <Redirect to="/" />
+          {/* <Redirect to="/" /> */}
         </Switch>
       </>
     )
